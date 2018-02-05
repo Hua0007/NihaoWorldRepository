@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		162DD08E7E9F1A945C2DD15C /* libPods-NihaoWorldRepository.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A865C0FA237DC53EF58A12C3 /* libPods-NihaoWorldRepository.a */; };
 		864D8E94202896D200FD83A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 864D8E93202896D200FD83A2 /* AppDelegate.m */; };
 		864D8E97202896D200FD83A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 864D8E96202896D200FD83A2 /* ViewController.m */; };
 		864D8E9A202896D200FD83A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 864D8E98202896D200FD83A2 /* Main.storyboard */; };
 		864D8E9C202896D200FD83A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864D8E9B202896D200FD83A2 /* Assets.xcassets */; };
 		864D8E9F202896D200FD83A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 864D8E9D202896D200FD83A2 /* LaunchScreen.storyboard */; };
 		864D8EA2202896D200FD83A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 864D8EA1202896D200FD83A2 /* main.m */; };
+		864D8EAB2028972A00FD83A2 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 864D8EAA2028972A00FD83A2 /* TestView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45F2A2C91AE7BC460A8C3EEC /* Pods-NihaoWorldRepository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NihaoWorldRepository.release.xcconfig"; path = "Pods/Target Support Files/Pods-NihaoWorldRepository/Pods-NihaoWorldRepository.release.xcconfig"; sourceTree = "<group>"; };
+		766F62D117ADAD226C647C42 /* Pods-NihaoWorldRepository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NihaoWorldRepository.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NihaoWorldRepository/Pods-NihaoWorldRepository.debug.xcconfig"; sourceTree = "<group>"; };
 		864D8E8F202896D200FD83A2 /* NihaoWorldRepository.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NihaoWorldRepository.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		864D8E92202896D200FD83A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		864D8E93202896D200FD83A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +30,9 @@
 		864D8E9E202896D200FD83A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		864D8EA0202896D200FD83A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		864D8EA1202896D200FD83A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		864D8EA92028972A00FD83A2 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		864D8EAA2028972A00FD83A2 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
+		A865C0FA237DC53EF58A12C3 /* libPods-NihaoWorldRepository.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NihaoWorldRepository.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				162DD08E7E9F1A945C2DD15C /* libPods-NihaoWorldRepository.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AAAB19AB92E4E0837B67D62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A865C0FA237DC53EF58A12C3 /* libPods-NihaoWorldRepository.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7706F0A6D6AB42AA2C772ABC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				766F62D117ADAD226C647C42 /* Pods-NihaoWorldRepository.debug.xcconfig */,
+				45F2A2C91AE7BC460A8C3EEC /* Pods-NihaoWorldRepository.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		864D8E86202896D200FD83A2 = {
 			isa = PBXGroup;
 			children = (
 				864D8E91202896D200FD83A2 /* NihaoWorldRepository */,
 				864D8E90202896D200FD83A2 /* Products */,
+				7706F0A6D6AB42AA2C772ABC /* Pods */,
+				2AAAB19AB92E4E0837B67D62 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +85,7 @@
 		864D8E91202896D200FD83A2 /* NihaoWorldRepository */ = {
 			isa = PBXGroup;
 			children = (
+				864D8EA82028972A00FD83A2 /* TestView */,
 				864D8E92202896D200FD83A2 /* AppDelegate.h */,
 				864D8E93202896D200FD83A2 /* AppDelegate.m */,
 				864D8E95202896D200FD83A2 /* ViewController.h */,
@@ -71,6 +99,15 @@
 			path = NihaoWorldRepository;
 			sourceTree = "<group>";
 		};
+		864D8EA82028972A00FD83A2 /* TestView */ = {
+			isa = PBXGroup;
+			children = (
+				864D8EA92028972A00FD83A2 /* TestView.h */,
+				864D8EAA2028972A00FD83A2 /* TestView.m */,
+			);
+			path = TestView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 864D8EA5202896D200FD83A2 /* Build configuration list for PBXNativeTarget "NihaoWorldRepository" */;
 			buildPhases = (
+				AA6697C8A92BF649C468E5B4 /* [CP] Check Pods Manifest.lock */,
 				864D8E8B202896D200FD83A2 /* Sources */,
 				864D8E8C202896D200FD83A2 /* Frameworks */,
 				864D8E8D202896D200FD83A2 /* Resources */,
+				74B3EC7F830499890A884EE8 /* [CP] Embed Pods Frameworks */,
+				F858A3F61E59DDAB06E2D192 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,11 +177,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		74B3EC7F830499890A884EE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NihaoWorldRepository/Pods-NihaoWorldRepository-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA6697C8A92BF649C468E5B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NihaoWorldRepository-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F858A3F61E59DDAB06E2D192 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NihaoWorldRepository/Pods-NihaoWorldRepository-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		864D8E8B202896D200FD83A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				864D8EAB2028972A00FD83A2 /* TestView.m in Sources */,
 				864D8E97202896D200FD83A2 /* ViewController.m in Sources */,
 				864D8EA2202896D200FD83A2 /* main.m in Sources */,
 				864D8E94202896D200FD83A2 /* AppDelegate.m in Sources */,
@@ -276,6 +368,7 @@
 		};
 		864D8EA6202896D200FD83A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 766F62D117ADAD226C647C42 /* Pods-NihaoWorldRepository.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,6 +382,7 @@
 		};
 		864D8EA7202896D200FD83A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45F2A2C91AE7BC460A8C3EEC /* Pods-NihaoWorldRepository.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
